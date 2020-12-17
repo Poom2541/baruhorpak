@@ -19,7 +19,7 @@ class _MyResetPasswordPageState extends State<MyResetPasswordPage> {
         key: scaffoldKey,
         appBar: AppBar(
           backgroundColor: Colors.purple,
-          title: Text("Reset password", style: TextStyle(color: Colors.white)),
+          title: Text("รีเซ็ต รหัสผ่าน ", style: TextStyle(color: Colors.white)),
           iconTheme: IconThemeData(
             color: Colors.white, //change your color here
           ),

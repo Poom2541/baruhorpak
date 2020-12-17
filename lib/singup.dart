@@ -31,7 +31,7 @@ class _MySignUpPageState extends State<MySignUpPage> {
       key: scaffoldKey,
        appBar: AppBar(
          backgroundColor: Colors.purple,
-          title: Text("Sign up", style: TextStyle(color: Colors.white)),
+          title: Text("สร้างบัญชีผู้ใช้", style: TextStyle(color: Colors.white)),
         ),
       
 
