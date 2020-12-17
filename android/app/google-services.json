@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "755616252657",
+    "project_id": "bsruhorpak",
+    "storage_bucket": "bsruhorpak.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:755616252657:android:8d0123b06cfd1bb299df50",
+        "android_client_info": {
+          "package_name": "com.example.bsruhorpak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "755616252657-ar5rot5uit6s5gsc2oj3f5nr5p56t4gp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDI6kyeEKEmKCrC_FoA9DdlYzOEkQMd2Fc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "755616252657-ar5rot5uit6s5gsc2oj3f5nr5p56t4gp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

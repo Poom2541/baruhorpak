@@ -23,6 +23,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  firebase_core: "^0.5.2+1"
+  firebase_auth: "^0.18.3+1"
+  flutter_mobx: ^1.1.0+2
+  
   flutter_launcher_icons: "^0.8.1"
   flutter_rename_app: "^1.0.0"
 
@@ -59,6 +63,7 @@ flutter:
     - assets/logohorpak.png
     - assets/google.png
     - assets/facebook.png
+    - assets/รูปภาพ1.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
