@@ -1,8 +1,10 @@
-import 'package:bsruhorpak/page/profile.dart';
+
+
+import 'package:bsruhorpak/page/alert.dart';
 import 'package:bsruhorpak/page/settings.dart';
 
 import 'package:flutter/material.dart';
-import 'chat.dart';
+import 'reserve.dart';
 import 'home.dart';
 
 class HomePage extends StatefulWidget {
@@ -16,8 +18,8 @@ class _HomePageState extends State<HomePage> {
   int currentTab = 0; // to keep track of active tab index
   final List<Widget> screens = [
     Home(),
-    Chat(),
-    Profile(),
+    Reserve(),
+    Alert(),
     Settings(),
   ]; // to store nested tabs
   final PageStorageBucket bucket = PageStorageBucket();
@@ -26,6 +28,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomPadding: false,
       body: PageStorage(
         child: currentScreen,
         bucket: bucket,
@@ -50,7 +53,7 @@ class _HomePageState extends State<HomePage> {
                 children: <Widget>[
                   MaterialButton(
                     color: Colors.purple,
-                    minWidth: 100,
+                    minWidth: 90,
                     onPressed: () {
                       setState(() {
                         currentScreen =
@@ -80,7 +83,7 @@ class _HomePageState extends State<HomePage> {
                     onPressed: () {
                       setState(() {
                         currentScreen =
-                            Chat(); // if user taps on this dashboard tab will be active
+                            Reserve(); // if user taps on this dashboard tab will be active
                         currentTab = 1;
                       });
                     },
@@ -114,7 +117,7 @@ class _HomePageState extends State<HomePage> {
                     onPressed: () {
                       setState(() {
                         currentScreen =
-                            Profile(); // if user taps on this dashboard tab will be active
+                            Alert(); // if user taps on this dashboard tab will be active
                         currentTab = 2;
                       });
                     },

@@ -2,12 +2,12 @@ import 'package:bsruhorpak/login2.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
-class Chat extends StatefulWidget {
+class Reserve extends StatefulWidget {
   @override
-  _ChatState createState() => _ChatState();
+  _ReserveState createState() => _ReserveState();
 }
 
-class _ChatState extends State<Chat> {
+class _ReserveState extends State<Reserve> {
   final FirebaseAuth _auth = FirebaseAuth.instance;
    void signOut(BuildContext context) {
     _auth.signOut();
@@ -23,7 +23,7 @@ class _ChatState extends State<Chat> {
         resizeToAvoidBottomPadding: false,
         appBar: AppBar(
            backgroundColor: Colors.purple,
-          title: Text('Chats'),
+          title: Text('Reserve'),
             actions: <Widget>[
               IconButton(
                   icon: Icon(Icons.exit_to_app),

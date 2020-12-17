@@ -36,13 +36,13 @@ class _MySignUpPageState extends State<MySignUpPage> {
       
 
         body: Container(
-            color: Colors.red[50],
+            color: Colors.purple[50],
             child: Center(
               child: Container(
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(16),
                       gradient: LinearGradient(
-                          colors: [Colors.purple[100], Colors.purple[100]])),
+                          colors: [Colors.purple[50], Colors.purple[50]])),
                   margin: EdgeInsets.all(32),
                   padding: EdgeInsets.all(24),
                   child: Column(
@@ -63,7 +63,7 @@ class _MySignUpPageState extends State<MySignUpPage> {
         child: Container(
           
            constraints: BoxConstraints.expand(height: 50),
-      child: Text("Sign up",
+      child: Text("สร้างบัญชีผู้ใช้",
           textAlign: TextAlign.center,
           style: TextStyle(fontSize: 18, color: Colors.white)),
       decoration: BoxDecoration(

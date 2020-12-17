@@ -49,7 +49,7 @@ class _MyResetPasswordPageState extends State<MyResetPasswordPage> {
     return InkWell(
         child: Container(
             constraints: BoxConstraints.expand(height: 50),
-            child: Text("Reset password",
+            child: Text("รีเซ็ต รหัสผ่าน ",
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 18, color: Colors.white)),
             decoration: BoxDecoration(

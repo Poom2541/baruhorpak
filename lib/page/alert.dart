@@ -2,12 +2,12 @@ import 'package:bsruhorpak/login2.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
-class Profile extends StatefulWidget {
+class Alert extends StatefulWidget {
   @override
-  _ProfileState createState() => _ProfileState();
+  _AlertState createState() => _AlertState();
 }
 
-class _ProfileState extends State<Profile> {
+class _AlertState extends State<Alert> {
   final FirebaseAuth _auth = FirebaseAuth.instance;
    void signOut(BuildContext context) {
     _auth.signOut();

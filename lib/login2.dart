@@ -90,7 +90,7 @@ class _MyLoginPageState extends State<MyLoginPage> {
     return InkWell(
       child: Container(
           constraints: BoxConstraints.expand(height: 50),
-          child: Text("Sing In",
+          child: Text("เข้าสู่ระบบ",
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 18, color: Colors.white)),
           decoration: BoxDecoration(
@@ -137,7 +137,7 @@ class _MyLoginPageState extends State<MyLoginPage> {
           Expanded(child: Divider(color: Colors.black)),
           Padding(
               padding: EdgeInsets.all(6),
-              child: Text("Don’t have an account?",
+              child: Text("ไม่มีบัญชีผู้ใช้",
                   style: TextStyle(color: Colors.black))),
           Expanded(child: Divider(color: Colors.green)),
         ]));
@@ -147,7 +147,7 @@ class _MyLoginPageState extends State<MyLoginPage> {
     return InkWell(
         child: Container(
             constraints: BoxConstraints.expand(height: 50),
-            child: Text("Sing Up",
+            child: Text("สร้างบัญชีผู้ใช้",
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 18, color: Colors.white)),
             decoration: BoxDecoration(
@@ -165,7 +165,7 @@ class _MyLoginPageState extends State<MyLoginPage> {
     return InkWell(
         child: Container(
             constraints: BoxConstraints.expand(height: 50),
-            child: Text("Forget Password",
+            child: Text("ลืมรหัสผ่าน",
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 18, color: Colors.white)),
             decoration: BoxDecoration(

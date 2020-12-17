@@ -37,6 +37,7 @@ class _SettingsState extends State<Settings> {
  
         ),
           body: SafeArea(
+            
           child: Container(
             child: Column(
               // crossAxisAlignment: CrossAxisAlignment.start,

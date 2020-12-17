@@ -47,7 +47,7 @@ class _HomeState extends State<Home> {
                 Expanded(
                   child: SingleChildScrollView(
                     child: Container(
-                      color: Colors.purple[100],
+                      color: Colors.purple[50],
                       child: Column(
                         children: [
                           Row(
@@ -69,16 +69,16 @@ class _HomeState extends State<Home> {
                             children: [
                               Image.asset(
                                 'assets/รูปภาพ1.png',
-                                width: 400,
+                                width: 360,
                               ),
                               Padding(
                                 padding: const EdgeInsets.all(8),
                                 child: SizedBox(
-                                  height: 250,
+                                  height: 100,
                                   child: Align(
                                     alignment: Alignment.topLeft,
                                     child: Text(
-                                      "ข้อมูลหอพัก1 ที่อยู่หอพัก",
+                                      "ข้อมูลหอพัก1 ",
                                       textAlign: TextAlign.left,
                                       style: TextStyle(fontSize: 20),
                                     ),
@@ -87,16 +87,34 @@ class _HomeState extends State<Home> {
                               ),
                               Image.asset(
                                 'assets/รูปภาพ1.png',
-                                width: 400,
+                                width: 360,
                               ),
                               SizedBox(
-                                height: 250,
+                                height: 100,
                                 child: Align(
                                   alignment: Alignment.topLeft,
                                   child: Text(
-                                    "ข้อมูลหอพัก2",
+                                    "ข้อมูลหอพัก2 ",
                                     textAlign: TextAlign.center,
                                     style: TextStyle(fontSize: 20),
+                                  ),
+                                ),
+                              ),
+                              Image.asset(
+                                'assets/รูปภาพ1.png',
+                                width: 360,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(8),
+                                child: SizedBox(
+                                  height: 100,
+                                  child: Align(
+                                    alignment: Alignment.topLeft,
+                                    child: Text(
+                                      "ข้อมูลหอพัก3 ",
+                                      textAlign: TextAlign.left,
+                                      style: TextStyle(fontSize: 20),
+                                    ),
                                   ),
                                 ),
                               )
