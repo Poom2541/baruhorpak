@@ -30,6 +30,7 @@ class _MySignUpPageState extends State<MySignUpPage> {
     return Scaffold(
       key: scaffoldKey,
        appBar: AppBar(
+         backgroundColor: Colors.purple,
           title: Text("Sign up", style: TextStyle(color: Colors.white)),
         ),
       

@@ -1,16 +1,11 @@
 import 'package:bsruhorpak/page/profile.dart';
 import 'package:bsruhorpak/page/settings.dart';
 
-
 import 'package:flutter/material.dart';
 import 'chat.dart';
 import 'home.dart';
 
 class HomePage extends StatefulWidget {
-  
-
-
-
   @override
   _HomePageState createState() => _HomePageState();
 }
@@ -31,17 +26,18 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
       body: PageStorage(
         child: currentScreen,
         bucket: bucket,
       ),
-      floatingActionButton: FlatButton(
-        child: (Image.asset('assets/logohorpak.png',height: 50,)),
-        onPressed: () {},
-      ),
+      // floatingActionButton: FlatButton(
+
+      //   child: (Image.asset('assets/logohorpak.png',height: 50,)),
+      //   onPressed: () {},
+      // ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomAppBar(
+        color: Colors.purple,
         shape: CircularNotchedRectangle(),
         notchMargin: 10,
         child: Container(
@@ -53,7 +49,8 @@ class _HomePageState extends State<HomePage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   MaterialButton(
-                    minWidth: 40,
+                    color: Colors.purple,
+                    minWidth: 100,
                     onPressed: () {
                       setState(() {
                         currentScreen =
@@ -66,19 +63,20 @@ class _HomePageState extends State<HomePage> {
                       children: <Widget>[
                         Icon(
                           Icons.home,
-                          color: currentTab == 0 ? Colors.blue : Colors.grey,
+                          color: currentTab == 0 ? Colors.white : Colors.grey,
                         ),
                         Text(
                           'Home',
                           style: TextStyle(
-                            color: currentTab == 0 ? Colors.blue : Colors.grey,
+                            color: currentTab == 0 ? Colors.white : Colors.grey,
                           ),
                         ),
                       ],
                     ),
                   ),
                   MaterialButton(
-                    minWidth: 40,
+                    color: Colors.purple,
+                    minWidth: 100,
                     onPressed: () {
                       setState(() {
                         currentScreen =
@@ -90,13 +88,13 @@ class _HomePageState extends State<HomePage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Icon(
-                          Icons.chat,
-                          color: currentTab == 1 ? Colors.blue : Colors.grey,
+                          Icons.book_online,
+                          color: currentTab == 1 ? Colors.white : Colors.grey,
                         ),
                         Text(
-                          'Chats',
+                          'Booking',
                           style: TextStyle(
-                            color: currentTab == 1 ? Colors.blue : Colors.grey,
+                            color: currentTab == 1 ? Colors.white : Colors.grey,
                           ),
                         ),
                       ],
@@ -104,14 +102,15 @@ class _HomePageState extends State<HomePage> {
                   )
                 ],
               ),
-            
+
               // Right Tab bar icons
 
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   MaterialButton(
-                    minWidth:0,
+                    color: Colors.purple,
+                    minWidth: 100,
                     onPressed: () {
                       setState(() {
                         currentScreen =
@@ -123,20 +122,20 @@ class _HomePageState extends State<HomePage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Icon(
-                          Icons.dashboard,
-                          color: currentTab == 2 ? Colors.blue : Colors.grey,
+                          Icons.add_alert,
+                          color: currentTab == 2 ? Colors.white : Colors.grey,
                         ),
                         Text(
-                          'Profile',
+                          'Alert',
                           style: TextStyle(
-                            color: currentTab == 2 ? Colors.blue : Colors.grey,
+                            color: currentTab == 2 ? Colors.white : Colors.grey,
                           ),
                         ),
                       ],
                     ),
                   ),
                   MaterialButton(
-                    minWidth: 40,
+                    minWidth: 100,
                     onPressed: () {
                       setState(() {
                         currentScreen =
@@ -149,12 +148,12 @@ class _HomePageState extends State<HomePage> {
                       children: <Widget>[
                         Icon(
                           Icons.settings,
-                          color: currentTab == 3 ? Colors.blue : Colors.grey,
+                          color: currentTab == 3 ? Colors.white : Colors.grey,
                         ),
                         Text(
                           'Settings',
                           style: TextStyle(
-                            color: currentTab == 3 ? Colors.blue : Colors.grey,
+                            color: currentTab == 3 ? Colors.white : Colors.grey,
                           ),
                         ),
                       ],

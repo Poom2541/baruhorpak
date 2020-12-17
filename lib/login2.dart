@@ -90,7 +90,7 @@ class _MyLoginPageState extends State<MyLoginPage> {
     return InkWell(
       child: Container(
           constraints: BoxConstraints.expand(height: 50),
-          child: Text("ลงชื่อเข้าใช้",
+          child: Text("Sing In",
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 18, color: Colors.white)),
           decoration: BoxDecoration(
@@ -147,7 +147,7 @@ class _MyLoginPageState extends State<MyLoginPage> {
     return InkWell(
         child: Container(
             constraints: BoxConstraints.expand(height: 50),
-            child: Text("สร้างบัญชีผู้ใช้",
+            child: Text("Sing Up",
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 18, color: Colors.white)),
             decoration: BoxDecoration(
@@ -165,7 +165,7 @@ class _MyLoginPageState extends State<MyLoginPage> {
     return InkWell(
         child: Container(
             constraints: BoxConstraints.expand(height: 50),
-            child: Text("ลืมรหัสผ่าน",
+            child: Text("Forget Password",
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 18, color: Colors.white)),
             decoration: BoxDecoration(
@@ -185,7 +185,7 @@ class _MyLoginPageState extends State<MyLoginPage> {
     String email = emailController.text.trim();
     String password = passwordController.text.trim();
     _auth
-        .signInWithEmailAndPassword(email: email, password: password)
+        .signInWithEmailAndPassword(email: "poom@gmail.com", password: "123456")
         .then((user) {
       print("signed in ${user.user}");
       checkAuth(context);
