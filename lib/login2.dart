@@ -185,7 +185,7 @@ class _MyLoginPageState extends State<MyLoginPage> {
     String email = emailController.text.trim();
     String password = passwordController.text.trim();
     _auth
-        .signInWithEmailAndPassword(email: "poom@gmail.com", password: "123456")
+        .signInWithEmailAndPassword(email: email, password: password)
         .then((user) {
       print("signed in ${user.user}");
       checkAuth(context);
